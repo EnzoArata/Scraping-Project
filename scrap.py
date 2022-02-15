@@ -59,6 +59,7 @@ for url in collegeUrlList:
                 continue
             if city == " ":
                 city = address[4+len(street):i]
+                #Zip can be 5 digits or 9
                 if address[len(address)-7] == "-":
                     state = address[6+len(street)+len(city):len(address)-12]
                     zip = address[len(address)-12:len(address)-2]
